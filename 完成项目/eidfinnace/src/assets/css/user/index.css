@@ -1,0 +1,139 @@
+.ui-cells:before, .ui-cells:after {
+    border: none;
+}
+.ui-cells {
+    font-size: 0.7rem;
+}
+.svg {
+    margin-right: 0;
+}
+.header {
+    background: url(../../images/personal.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    padding-bottom: 2.2rem;
+}
+.header>div:first-of-type {
+    width: 3rem;
+    margin: 0 auto;
+    padding: 1rem 0 0.5rem 0;
+}
+.header div:first-of-type img {
+    width: 100%;
+    border-radius: 50%;
+}
+.chat-photo {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    display: inline-block;
+}
+.header div:nth-of-type(2) {
+    text-align: center;
+    font-size: 0.9rem;
+}
+.look-all {
+    text-align: right;
+}
+.look-all a {
+    color: #999999;
+}
+.look-all i {
+    margin-left: 10px;
+}
+.mall-list {
+    border-left: 1px solid #CCCCCC;
+}
+.mall-list:first-of-type {
+    border-left: none;
+}
+.mall-list-img {
+    width: 30%;
+    margin: 0 auto;
+    position: relative;
+}
+.mall-list-img span {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -3px;
+    background: #EF403D;
+    border-radius: 50%;
+    color: #fff;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 12px;
+}
+.mall-name {
+    margin-top: 0.2rem;
+    color: #3a3a3a;
+    font-size: 0.7rem;
+}
+.my-order {
+    padding: 1rem 0.75rem;
+}
+.right-icon {
+    text-align: right;
+    color: #c7c7cc;
+}
+.left-content {
+    font-size: 0.75rem;
+    color: #666666;
+}
+.left-content .svg {
+    font-size: 20px;
+    margin-right: 15px;
+}
+.list-box-content {
+    padding: 0.5rem 0;
+    margin: 0 0.75rem;
+    border-top: 1px solid #e7e7e7;
+}
+.ui-cells a:first-of-type .list-box-content {
+    border-top: none;
+}
+.ui-content>.ui-cells:last-of-type {
+    margin-bottom: 1rem;
+}
+.icon-youjiantou {
+    color: #c7c7cc;
+}
+#myself-color {
+    color: #01AAAF!important;
+}
+/*修改 2017年6月19日*/
+
+.header>div:last-of-type {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+}
+.header>div:last-of-type .svg {
+    font-size: 1.3rem;
+    color: #00B2B6;
+}
+.icon-bianji {
+    margin-right: 0.75rem;
+}
+.newsBox {
+    display: inline-block;
+    position: relative;
+}
+.newsBox span {
+    display: inline-block;
+    position: absolute;
+    width: 0.85rem;
+    height: 0.85rem;
+    line-height: 0.85rem;
+    background: red;
+    font-size: 0.5rem !important;
+    color: #fff;
+    border-radius: 50%;
+    top: 2px;
+    text-align: center;
+    right: -8px;
+}

@@ -1,0 +1,45 @@
+a, input, a:focus, input:focus, [onclick] {
+    outline: 0 none;
+}
+
+.cell-item input {
+    background: none;
+    border: 0 none;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    outline: 0 none;
+    text-decoration: none;
+    text-align: right!important;
+}
+
+select {
+    direction: rtl;
+}
+
+option {
+    direction: ltr;
+}
+
+.operate {
+    padding: 25px 15px;
+    text-align: center;
+}
+
+.operate button {
+    border: 1px solid #909090;
+    background: transparent;
+    font-size: 14px;
+    color: #909090;
+    border-radius: 4px;
+    line-height: 30px;
+    padding: 0 6px;
+    margin-right: 8px;
+    text-align: center;
+    width: 120px;
+}
+
+.operate button.highlight {
+    border-color: #01AAAF;
+    color: #01AAAF;
+}

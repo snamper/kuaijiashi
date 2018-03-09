@@ -1,0 +1,7 @@
+/**
+ * 圆角头像
+ */
+.ui-avatar-radius{
+	border-radius: 50%;
+    overflow: hidden;
+}

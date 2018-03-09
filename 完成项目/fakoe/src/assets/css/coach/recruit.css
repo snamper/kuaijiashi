@@ -1,0 +1,251 @@
+.ui-cell:before, .ui-cell:after {
+    border: none;
+}
+.recruit_nav {
+    background: #FFFFFF;
+    padding-bottom: 0.75rem;
+}
+.ui-content {
+    padding-bottom: 0.75rem;
+}
+.nav-box>div {
+    width: 33.333%;
+    text-align: center;
+    color: #AAAAAA;
+    position: relative;
+}
+.nav-box>div:after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #AAAAAA;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1.25rem;
+    z-index: 2;
+    border: 2px solid #fff;
+}
+.straight {
+    padding: 0;
+}
+.straight>div {
+    border-top: 2px solid #ccc;
+}
+.active {
+    color: #00B2B6 !important;
+    border-color: #00B2B6 !important;
+}
+.nav-box>div.active:after {
+    background: #00B2B6;
+}
+.info-box {
+    background: #FFFFFF;
+    margin-top: 0.75rem;
+}
+.item-list {
+    border-top: 1px solid #D9D9D9;
+    padding: 0 0.75rem;
+    height: 2rem;
+    line-height: 2rem;
+}
+.item-list>div:first-of-type {
+    margin-right: 0.5rem;
+}
+.item-list>div {
+    height: 100%;
+}
+.item-list input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 0.65rem;
+}
+.ui-item-media {
+    display: inline-block;
+    margin-right: 2rem;
+}
+.sex-box>.ui-label-checkbox:last-of-type .ui-item-media {
+    margin-right: 0;
+}
+.ui-item-media .ui-icon {
+    position: relative;
+    top: -2px;
+}
+.info-box>.item-list:first-of-type, .card-info>.item-list:first-of-type {
+    border: none;
+}
+.occ {
+    padding: 0;
+    height: 2rem;
+    line-height: 2rem;
+}
+.occ-input {
+    position: relative;
+    height: 100%;
+    border-top: 1px solid #D9D9D9;
+}
+.occ-input .ui-icon {
+    position: absolute;
+    left: 2%;
+    top: 3px;
+    color: #BBBBBB;
+}
+.occ-input input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-left: 1.4rem;
+}
+.card-info {
+    margin-top: 0.75rem;
+    background: #FFFFFF;
+}
+/*.add-img{
+    width: 6rem;
+    text-align: center;
+    background: #EEEEEE;
+    color: #999999;
+    border-radius: 5px;
+    padding: 0.75rem 0;
+    margin-left: 0.5rem;
+    position: relative;
+}
+.add-img .ui-icon{
+    font-size: 1rem;
+}
+.file {
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}*/
+
+.ui-content .item {
+    border-top: 1px solid #D9D9D9;
+}
+.btn {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    background: #00B2B6;
+    padding: 0.5rem 0;
+    margin-top: 0.75rem;
+    border-radius: 5px;
+    color: #fff;
+}
+/*图片上传*/
+
+.up-img {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
+.up-img>div {
+    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+}
+.file {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.add-img, .add-img1 {
+    width: 6rem;
+    height: 4rem;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    overflow: hidden;
+    background: #EEEEEE;
+    color: #999999;
+    border-radius: 5px;
+    position: relative;
+}
+.small-img, .small-img1 {
+    max-width: 100%;
+}
+.small-img .img-box, .small-img1 .img-box1 {
+    display: inline-block;
+    width: 6rem;
+    height: 4rem;
+    margin-right: .5rem;
+    position: relative;
+    border-radius: 5px;
+}
+.small-img .img-box img, .small-img1 .img-box1 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.small-img .img-box .delete-box, .small-img1 .img-box1 .delete-box1 {
+    display: block;
+    position: absolute;
+    top: -.5rem;
+    right: -.5rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    background: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.small-img .img-box .delete-box img, .small-img1 .img-box1 .delete-box1 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/*另一个css*/
+
+.textarea {
+    border-top: 1px solid #D9D9D9;
+}
+.textarea>div:first-of-type {
+    margin-right: 0.5rem;
+}
+.textarea>div:last-of-type textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    resize: none;
+}
+.texnum {
+    padding-top: 0;
+    color: #666666;
+}
+.texnum span {
+    color: #00B2B6;
+}
+.info-box>.item-list:first-of-type {
+    border: none;
+}
+.btn-box>div {
+    width: 50%;
+    margin-right: 0.75rem;
+    color: #00B2B6;
+    border-radius: 5px;
+    border: 1px solid #00B2B6;
+    text-align: center;
+    padding: 0.5rem 0;
+    margin-top: 0.25rem;
+}
+.btn-box>div:last-of-type {
+    background: #00B2B6;
+    color: #FFFFFF;
+    margin-right: 0;
+}
+.vue-html5-editor {
+    border-radius: 0px;
+}

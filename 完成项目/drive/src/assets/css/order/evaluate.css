@@ -1,0 +1,155 @@
+.comment-box {
+    margin-top: 0;
+    padding: 0.5rem 0;
+}
+.add-master>div:first-of-type {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: .75rem;
+    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+}
+.add-master div:first-of-type img {
+    border-radius: 50%;
+}
+.add-master-box {
+    margin-left: 0.5rem;
+}
+.add-master-box div:first-of-type {
+    font-size: 0.8rem;
+}
+.add-master-box div:nth-of-type(2) {
+    margin: 0.3rem 0;
+}
+.add-master-box div:nth-of-type(2) span {
+    border-radius: 10px;
+    padding: 0 0.5rem;
+    font-size: 0.7rem;
+    margin-right: 0.4rem;
+}
+.add-master-box div:last-of-type {
+    position: absolute;
+    top: 6%;
+    right: 5%;
+    color: #FE7467;
+    font-size: 0.75rem;
+}
+.add-master-box .ui-nowrap-2 {
+    font-size: 0.75rem;
+    color: #666666;
+}
+.quality:before {
+    border-top: none;
+}
+.quality div:nth-of-type(2) {
+    margin-left: 0.5rem;
+}
+.quality div:nth-of-type(2) i {
+    font-size: 1.2rem;
+    margin-left: 0.2rem;
+    color: #ccc;
+}
+.quality div:nth-of-type(2) i.active {
+    color: #FE7467;
+}
+.quality div:first-of-type {
+    width: 25%;
+}
+.quality:last-of-type {
+    padding-bottom: 0;
+}
+.evaluate .comment-tag span {
+    display: inline-block;
+    padding: 0 0.5rem;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    margin-right: 0.4rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.65rem;
+    color: #999999;
+}
+.comment-tag .active {
+    color: #01AAAF!important;
+    border: 1px solid #01AAAF!important;
+}
+.evaluate {
+    padding: .5rem .75rem;
+}
+.evaluate div:first-of-type {
+    width: 25%;
+    float: left;
+}
+.evaluate .comment-tag {
+    width: 75%;
+    float: right;
+}
+.evaluate-box:before {
+    border-top: none;
+}
+textarea {
+    resize: none;
+    display: inline-block;
+    width: 100%;
+    overflow: auto;
+    border-radius: 5px;
+    margin-top: 1rem;
+    border: 1px solid #cccccc;
+    padding: 0.3rem;
+}
+.btn-bottom a {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border: 1px solid;
+    padding: 0.5rem 0;
+    text-align: center;
+    background: #01AAAF;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+.evaluate div:last-of-type span.selected {
+    color: #01AAAF!important;
+    border: 1px solid #01AAAF!important;
+}
+/*大师回复框*/
+
+.replay {
+    padding: .5rem;
+    background-color: #F1FFFF;
+    border: 1px solid #9CD1D1;
+    position: relative;
+    margin: 0 0.75rem;
+    margin-top: 0.6rem;
+}
+.replay:before {
+    content: "";
+    position: absolute;
+    top: -.5rem;
+    left: 40px;
+    border-width: 0 .5rem .5rem;
+    border-style: solid;
+    border-color: #9CD1D1 transparent;
+    display: block;
+    width: 0;
+}
+.replay:after {
+    content: "";
+    position: absolute;
+    top: -.45rem;
+    left: 40px;
+    border-width: 0 .5rem .5rem;
+    border-style: solid;
+    border-color: #F1FFFF transparent;
+    display: block;
+    width: 0;
+}
+.quality {
+    padding: 0.25rem 0.75rem;
+}
+.ui-cells:before, .ui-cells:after {
+    border: none;
+}

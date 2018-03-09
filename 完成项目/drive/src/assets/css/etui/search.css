@@ -1,0 +1,88 @@
+/* === Search Bar === */
+.ui-searchbar {
+    padding: 8px 0;
+    overflow: hidden;
+    height: 2.2rem;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.ui-searchbar .ui-searchbar-cancel {
+    margin-right: -3rem;
+    width: 2.2rem;
+    float: right;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    text-align: center;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.ui-searchbar .ui-search-input {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    margin-right: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+.ui-searchbar .ui-search-input input {
+    margin: 0;
+    height: 1.4rem;
+}
+.ui-searchbar.ui-searchbar-active .ui-searchbar-cancel {
+    margin-right: 0;
+    opacity: 1;
+}
+.ui-searchbar.ui-searchbar-active .ui-searchbar-cancel + .ui-search-input {
+    margin-right: 2.5rem;
+}
+.ui-search-input {
+    position: relative;
+}
+.ui-search-input input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 1.4rem;
+    display: block;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    font-family: inherit;
+    color: #3d4145;
+    font-size: 0.7rem;
+    font-weight: normal;
+    padding: 0 0.5rem;
+    background-color: #fff;
+    border: 1px solid #b4b4b4;
+}
+.ui-search-input input::-webkit-input-placeholder {
+    color: #ccc;
+    opacity: 1;
+}
+.ui-search-input .ui-icon {
+    position: absolute;
+    font-size: 0.9rem;
+    color: #b4b4b4;
+    top: 50%;
+    left: 0.3rem;
+    -webkit-transform: translate3D(0, -50%, 0);
+    transform: translate3D(0, -50%, 0);
+}
+.ui-search-input label + input {
+    padding-left: 1.4rem;
+}
+.ui-bar .ui-searchbar {
+    margin: 0 -0.5rem;
+    padding: 0.4rem 0.5rem;
+    background: rgba(0, 0, 0, 0.1);
+}
+.ui-bar .ui-searchbar .ui-search-input input {
+    border: 0;
+}
+.ui-bar .ui-searchbar .ui-searchbar-cancel {
+    color: #5f646e;
+}

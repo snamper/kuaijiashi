@@ -1,0 +1,93 @@
+/*评价列表*/
+.comment-box{
+    margin-bottom: .4rem;
+    padding: 0 .75rem;
+    color:#666;
+    background-color: #fff;
+}
+.comment-box>.ui-cell{
+    padding: .5rem 0;
+}
+.comment-box .tabs{
+    margin-top: .2rem;
+    padding-bottom: 0.1rem;
+}
+.comment-box .tabs>span{
+    padding: 0 .2rem;
+    line-height: 1rem;
+    border-radius: .2rem;
+    margin: .3rem .3rem 0 0;
+    border:1px solid #FE7467;
+    white-space:nowrap;
+    display: inline-block;
+    color: #FE7467;
+}
+.comment-box .head-pic{
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-right: .3rem;
+}
+.comment-box .head-pic>img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.comment-box .title {
+    padding: 0;
+}
+.list-box{
+	width: 100%;
+}
+.comment-box .text{
+    color:#3A3A3A;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+/*大师回复框*/
+.comment-box .replay{
+    padding: .5rem;
+    margin-top: .6rem;
+    background-color: #F1FFFF;
+    border:1px solid #9CD1D1;
+    position: relative;
+    border-radius: 5px;
+}
+.comment-box .replay:before{
+    content: "";
+    position: absolute;
+    top: -.5rem;
+    left: 40px;
+    border-width: 0 .5rem .5rem;
+    border-style: solid;
+    border-color: #9CD1D1 transparent;
+    display: block;
+    width: 0;
+}
+.comment-box .replay:after{
+    content: "";
+    position: absolute;
+    top: -.45rem;
+    left: 40px;
+    border-width: 0 .5rem .5rem;
+    border-style: solid;
+    border-color: #F1FFFF transparent;
+    display: block;
+    width: 0;
+}
+.browse-more{
+    width: 100%;
+    text-align: center;
+    line-height: 2rem;
+    color: #00ABAF;
+    display: block;
+    font-size: .7rem;
+}
+.content-title{
+	margin-top: 1rem;
+    background: #fff;
+    padding: .5rem .75rem;
+    border-bottom: 1px solid #ccc;
+}

@@ -1,0 +1,37 @@
+@import url('http://at.alicdn.com/t/font_162482_2t22n4sdt6eqm2t9.css');
+.icon-shui{
+	color: #5991F0;
+	font-size: 0.8rem;
+}
+.icon-hot{
+	color: #EB6565;
+	font-size: 0.8rem;
+}
+.icon-mu{
+	color: #35BD95;
+	font-size: 0.8rem;
+}
+.icon-tu{
+	color: #FFB070;
+	font-size: 0.8rem;
+}
+.icon-jin{
+	color: #FEDC61;
+	font-size: 0.8rem;
+}
+.nav-new{
+	position: absolute;
+	width: 0.85rem;
+    height: 0.85rem;
+    line-height: 0.85rem;
+    font-size: 0.5rem !important;
+    color: #fff;
+    border-radius: 50%;
+    top: 0;
+    text-align: center;
+    right: 0.75rem;
+    color: red;
+}
+.nav-new i{
+	font-size: 1rem !important;
+}

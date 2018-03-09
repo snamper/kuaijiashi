@@ -1,0 +1,639 @@
+/* === Calendar === */
+.ui-picker-calendar {
+    background: #fff;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+@media (orientation: landscape) and (max-height: 415px) {
+    .ui-picker-calendar:not(.ui-picker-modal-inline) {
+        height: 220px;
+    }
+}
+.ui-picker-calendar .ui-picker-modal-inner {
+    overflow: hidden;
+}
+.ui-picker-calendar-week-days {
+    height: 18px;
+    background: #f7f7f8;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 11px;
+    box-sizing: border-box;
+    position: relative;
+}
+.ui-picker-calendar-week-days:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: auto;
+    top: auto;
+    height: 1px;
+    width: 100%;
+    background-color: #c4c4c4;
+    display: block;
+    z-index: 15;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .ui-picker-calendar-week-days:after {
+        -webkit-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+    }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+    .ui-picker-calendar-week-days:after {
+        -webkit-transform: scaleY(0.33);
+        transform: scaleY(0.33);
+    }
+}
+.ui-picker-calendar-week-days .ui-picker-calendar-week-day {
+    -webkit-flex-shrink: 1;
+    -ms-flex: 0 1 auto;
+    -webkit-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 14.28571429%;
+    width: -webkit-calc(100% / 7);
+    width: calc(100% / 7);
+    line-height: 17px;
+    text-align: center;
+}
+.ui-picker-calendar-week-days + .ui-picker-calendar-months {
+    height: -webkit-calc(100% - 18px);
+    height: calc(100% - 18px);
+}
+.ui-picker-calendar-months {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.ui-picker-calendar-months-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+}
+.ui-picker-calendar-month {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.ui-picker-calendar-row {
+    height: 16.66666667%;
+    height: -webkit-calc(100% / 6);
+    height: calc(100% / 6);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-shrink: 1;
+    -ms-flex: 0 1 auto;
+    -webkit-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 100%;
+    position: relative;
+}
+.ui-picker-calendar-row:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: auto;
+    top: auto;
+    height: 1px;
+    width: 100%;
+    background-color: #ccc;
+    display: block;
+    z-index: 15;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .ui-picker-calendar-row:after {
+        -webkit-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+    }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+    .ui-picker-calendar-row:after {
+        -webkit-transform: scaleY(0.33);
+        transform: scaleY(0.33);
+    }
+}
+.ui-picker-calendar-row:last-child:after {
+    display: none;
+}
+.ui-picker-calendar-day {
+    -webkit-flex-shrink: 1;
+    -ms-flex: 0 1 auto;
+    -webkit-flex-shrink: 1;
+    flex-shrink: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 14.28571429%;
+    width: -webkit-calc(100% / 7);
+    width: calc(100% / 7);
+    text-align: center;
+    color: #3d4145;
+    font-size: 15px;
+    cursor: pointer;
+}
+.ui-picker-calendar-day.ui-picker-calendar-day-prev,
+.ui-picker-calendar-day.ui-picker-calendar-day-next {
+    color: #ccc;
+}
+.ui-picker-calendar-day.ui-picker-calendar-day-disabled {
+    color: #d4d4d4;
+    cursor: auto;
+}
+.ui-picker-calendar-day.ui-picker-calendar-day-today span {
+    background: #e3e3e3;
+}
+.ui-picker-calendar-day.ui-picker-calendar-day-selected span {
+    background: #0894ec;
+    color: #fff;
+}
+.ui-picker-calendar-day span {
+    display: inline-block;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+.ui-picker-calendar-month-picker,
+.ui-picker-calendar-year-picker {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    width: 50%;
+    max-width: 200px;
+    -webkit-flex-shrink: 10;
+    -ms-flex: 0 10 auto;
+    -webkit-flex-shrink: 10;
+    flex-shrink: 10;
+}
+.ui-picker-calendar-month-picker a.ui-icon-only,
+.ui-picker-calendar-year-picker a.ui-icon-only {
+    min-width: 36px;
+}
+.ui-picker-calendar-month-picker span,
+.ui-picker-calendar-year-picker span {
+    -webkit-flex-shrink: 1;
+    -ms-flex: 0 1 auto;
+    -webkit-flex-shrink: 1;
+    flex-shrink: 1;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ui-picker-calendar-years-picker,
+.ui-picker-calendar-months-picker {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 15;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+.ui-picker-calendar-years-picker:before,
+.ui-picker-calendar-months-picker:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: auto;
+    right: auto;
+    height: 1px;
+    width: 100%;
+    background-color: #999;
+    display: block;
+    z-index: 15;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .ui-picker-calendar-years-picker:before,
+    .ui-picker-calendar-months-picker:before {
+        -webkit-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+    }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+    .ui-picker-calendar-years-picker:before,
+    .ui-picker-calendar-months-picker:before {
+        -webkit-transform: scaleY(0.33);
+        transform: scaleY(0.33);
+    }
+}
+.ui-picker-calendar-years-picker .ui-picker-calendar-years-picker-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+}
+.ui-picker-calendar-years-picker .ui-picker-calendar-years-group {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.ui-picker-calendar-years-picker .ui-picker-calendar-row {
+    height: 20%;
+    height: -webkit-calc(100% / 5);
+    height: calc(100% / 5);
+}
+.ui-picker-calendar-years-picker .ui-picker-calendar-year-unit {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    text-align: center;
+}
+.ui-picker-calendar-years-picker .ui-picker-calendar-year-unit span {
+    display: block;
+    width: 100%;
+}
+.ui-picker-calendar-years-picker .ui-picker-calendar-year-unit.ui-current-calendar-year-unit {
+    background: #e3e3e3;
+}
+.ui-picker-calendar-years-picker .ui-picker-calendar-year-unit.ui-picker-calendar-year-unit-selected {
+    color: #fff;
+    background: #0894ec;
+}
+.ui-picker-calendar-months-picker .ui-picker-calendar-months-picker-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+}
+.ui-picker-calendar-months-picker .ui-picker-calendar-months-group {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.ui-picker-calendar-months-picker .ui-picker-calendar-row {
+    height: 33.33333333%;
+    height: -webkit-calc(100% / 3);
+    height: calc(100% / 3);
+}
+.ui-picker-calendar-months-picker .ui-picker-calendar-month-unit {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    text-align: center;
+}
+.ui-picker-calendar-months-picker .ui-picker-calendar-month-unit span {
+    display: block;
+    width: 100%;
+}
+.ui-picker-calendar-months-picker .ui-picker-calendar-month-unit.ui-current-calendar-month-unit {
+    background: #e3e3e3;
+}
+.ui-picker-calendar-months-picker .ui-picker-calendar-month-unit.ui-picker-calendar-month-unit-selected {
+    color: #fff;
+    background: #0894ec;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .ui-picker-calendar-years-picker:before,
+    .ui-picker-calendar-months-picker:before {
+        -webkit-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+    }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+    .ui-picker-calendar-years-picker:before,
+    .ui-picker-calendar-months-picker:before {
+        -webkit-transform: scaleY(0.33);
+        transform: scaleY(0.33);
+    }
+}
+.ui-picker-modal .ui-toolbar-inner {
+    height: 2.2rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    text-align: center;
+}
+.ui-picker-calendar-month-picker,
+.ui-picker-calendar-year-picker {
+    display: block;
+    line-height: 2.2rem;
+}
+.ui-picker-calendar-month-picker a.ui-icon-only,
+.ui-picker-calendar-year-picker a.ui-icon-only {
+    float: left;
+    width: 25%;
+    height: 2.2rem;
+    line-height: 2rem;
+}
+.ui-picker-calendar-month-picker .ui-current-month-value,
+.ui-picker-calendar-year-picker .ui-current-month-value,
+.ui-picker-calendar-month-picker .ui-current-year-value,
+.ui-picker-calendar-year-picker .ui-current-year-value {
+    float: left;
+    width: 50%;
+    height: 2.2rem;
+}
+/* === Columns Picker === */
+.ui-picker-columns {
+    width: 100%;
+    height: 13rem;
+    z-index: 11500;
+}
+.ui-picker-columns.ui-picker-modal-inline {
+    height: 10rem;
+}
+@media (orientation: landscape) and (max-height: 415px) {
+    .ui-picker-columns:not(.ui-picker-modal-inline) {
+        height: 10rem;
+    }
+}
+.ui-picker-items {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding: 0;
+    text-align: right;
+    font-size: 1.2rem;
+    -webkit-mask-box-image: -webkit-linear-gradient(bottom, transparent, transparent 5%, white 20%, white 80%, transparent 95%, transparent);
+    -webkit-mask-box-image: linear-gradient(to top, transparent, transparent 5%, white 20%, white 80%, transparent 95%, transparent);
+}
+.ui-bar + .ui-picker-items {
+    height: 10.8rem;
+}
+.ui-picker-items-col {
+    overflow: hidden;
+    position: relative;
+    max-height: 100%;
+}
+.ui-picker-items-col.ui-picker-items-col-left {
+    text-align: left;
+}
+.ui-picker-items-col.ui-picker-items-col-center {
+    text-align: center;
+    margin-right: 1rem;
+}
+.ui-picker-items-col.ui-picker-items-col-right {
+    text-align: right;
+}
+.ui-picker-items-col.ui-picker-items-col-divider {
+    color: #3d4145;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.ui-picker-items-col-normal {
+    width: 100%;
+}
+.ui-picker-items-col-wrapper {
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.ui-picker-item {
+    height: 36px;
+    line-height: 36px;
+    padding: 0 10px;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    font-size: 1.2rem;
+}
+.ui-picker-items-col-absolute .ui-picker-item {
+    position: absolute;
+}
+.ui-picker-item.ui-picker-item-far {
+    pointer-events: none;
+}
+.ui-picker-item.ui-picker-selected {
+    color: #3d4145;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+.ui-picker-center-highlight {
+    height: 36px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 50%;
+    margin-top: -18px;
+    pointer-events: none;
+}
+.ui-picker-center-highlight:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: auto;
+    right: auto;
+    height: 1px;
+    width: 100%;
+    background-color: #a8abb0;
+    display: block;
+    z-index: 15;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .ui-picker-center-highlight:before {
+        -webkit-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+    }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+    .ui-picker-center-highlight:before {
+        -webkit-transform: scaleY(0.33);
+        transform: scaleY(0.33);
+    }
+}
+.ui-picker-center-highlight:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: auto;
+    top: auto;
+    height: 1px;
+    width: 100%;
+    background-color: #a8abb0;
+    display: block;
+    z-index: 15;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .ui-picker-center-highlight:after {
+        -webkit-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+    }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+    .ui-picker-center-highlight:after {
+        -webkit-transform: scaleY(0.33);
+        transform: scaleY(0.33);
+    }
+}
+.ui-picker-3d .ui-picker-items {
+    overflow: hidden;
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+}
+.ui-picker-3d .ui-picker-items-col,
+.ui-picker-3d .ui-picker-items-col-wrapper,
+.ui-picker-3d .ui-picker-item {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.ui-picker-3d .ui-picker-items-col {
+    overflow: visible;
+}
+.ui-picker-3d .ui-picker-item {
+    -webkit-transform-origin: center center -110px;
+    transform-origin: center center -110px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.ui-picker-modal .ui-bar {
+    position: relative;
+    top: 0;
+}
+.ui-picker-modal .ui-bar:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: auto;
+    right: auto;
+    height: 1px;
+    width: 100%;
+    background-color: #a8abb0;
+    display: block;
+    z-index: 15;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .ui-picker-modal .ui-bar:before {
+        -webkit-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+    }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+    .ui-picker-modal .ui-bar:before {
+        -webkit-transform: scaleY(0.33);
+        transform: scaleY(0.33);
+    }
+}
+.ui-picker-modal .ui-bar:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: auto;
+    top: auto;
+    height: 1px;
+    width: 100%;
+    background-color: #a8abb0;
+    display: block;
+    z-index: 15;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .ui-picker-modal .ui-bar:after {
+        -webkit-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+    }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+    .ui-picker-modal .ui-bar:after {
+        -webkit-transform: scaleY(0.33);
+        transform: scaleY(0.33);
+    }
+}
+.ui-picker-modal .ui-bar .ui-title {
+    color: #5f646e;
+    font-weight: normal;
+}
+.ui-city-picker .ui-col-province {
+    width: 5rem;
+}
+.ui-city-picker .ui-col-city {
+    width: 6rem;
+}
+.ui-city-picker .ui-col-district {
+    width: 5rem;
+}

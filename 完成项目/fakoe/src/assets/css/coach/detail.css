@@ -1,0 +1,438 @@
+/*大师列表*/
+
+header {
+    width: 100%;
+    position: relative;
+}
+.master-img {
+    width: 100%;
+    display: block;
+    min-height: 3rem;
+}
+.detail-sc {
+    width: 13%;
+    background: rgba(0, 0, 0, .5);
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    padding: 0.2rem 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.detail-sc div i {
+    color: #fff;
+}
+.detail-sc div:last-of-type {
+    color: #fff;
+    font-size: 0.6rem;
+}
+.ui-cell {
+    background-color: #fff;
+    font-size: .7rem;
+}
+.no-border:before {
+    display: none;
+}
+.service {
+    margin-left: 0.5rem;
+    font-size: .6rem;
+    color: #00ABAE;
+}
+.service>span {
+    display: inline-block;
+}
+.service i {
+    font-size: 0.6rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+}
+.service i:first-of-type {
+    margin-left: 0;
+}
+.master-detail {
+    margin: 0;
+    padding: .3rem .75rem 0 .75rem;
+    font-size: .7rem;
+}
+.category>p {
+    margin: .5em 0;
+    font-size: 0.65rem;
+}
+.category {
+    position: relative;
+}
+.category>span {
+    font-size: 0.65rem;
+    padding: 0 .5rem;
+    line-height: 1rem;
+    border-radius: .5rem;
+    color: #00ABAE;
+    margin: .3rem .3rem 0 0;
+    border: 1px solid #00ABAE;
+    white-space: nowrap;
+    display: inline-block;
+}
+.master-info {
+    padding: .5rem 0;
+    color: #666666;
+    line-height: 1.7;
+}
+.data-count {
+    padding: .5rem 0!important;
+    color: #999999;
+}
+.data-count>div:nth-last-child(2) {
+    text-align: center;
+}
+.data-count>div:nth-last-child(1) {
+    text-align: right;
+}
+/*服务详情*/
+
+.service-content p {
+    margin: .6em 0;
+    font-size: .7rem;
+}
+.stars {
+    margin-left: .3rem;
+}
+/*评价列表*/
+
+.comment-box {
+    margin-bottom: 1.5rem;
+    padding: 0 .75rem;
+    color: #999999;
+    background-color: #fff;
+}
+.comment-box>.ui-cell {
+    padding: .5rem 0;
+}
+.comment-box .tabs {
+    margin-top: .2rem;
+    padding-bottom: 0.1rem;
+}
+.comment-box .tabs>span {
+    padding: 0 .2rem;
+    line-height: 1rem;
+    border-radius: .2rem;
+    margin: .3rem .3rem 0 0;
+    border: 1px solid #CCCCCC;
+    white-space: nowrap;
+    color: #999999;
+    display: inline-block;
+}
+.comment-box .head-pic {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-right: .3rem;
+}
+.comment-box .head-pic>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.comment-box .title {
+    padding: 0;
+}
+.comment-box .text {
+    color: #3A3A3A;
+}
+/*大师回复框*/
+
+.comment-box .replay {
+    padding: .5rem;
+    margin-top: .6rem;
+    background-color: #F1FFFF;
+    border: 1px solid #9CD1D1;
+    position: relative;
+    border-radius: 5px;
+}
+.comment-box .replay:before {
+    content: "";
+    position: absolute;
+    top: -.5rem;
+    left: 40px;
+    border-width: 0 .5rem .5rem;
+    border-style: solid;
+    border-color: #9CD1D1 transparent;
+    display: block;
+    width: 0;
+}
+.comment-box .replay:after {
+    content: "";
+    position: absolute;
+    top: -.45rem;
+    left: 40px;
+    border-width: 0 .5rem .5rem;
+    border-style: solid;
+    border-color: #F1FFFF transparent;
+    display: block;
+    width: 0;
+}
+.browse-more {
+    width: 100%;
+    text-align: center;
+    line-height: 2rem;
+    color: #00ABAF;
+    display: block;
+    font-size: .7rem;
+}
+/*底部按钮*/
+
+/*底部按钮*/
+
+.btn-bottom {
+    width: 100%;
+    height: 3rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 999;
+}
+.btn-buy {
+    width: 90%;
+    height: 2rem;
+    margin: .2rem auto 0 auto;
+    text-align: center;
+    font-size: .9rem;
+    line-height: 2rem;
+    color: #fff;
+    background-color: #00ABAF;
+    border-radius: .2rem;
+}
+.btn-bottom:before {
+    border-top: none;
+}
+.btn-bottom-prize {
+    text-align: center;
+}
+.btn-bottom-prize div:first-of-type {
+    color: #3A3A3A;
+    font-size: 0.65rem;
+}
+.btn-bottom-prize div:first-of-type i {
+    font-size: 0.65rem;
+}
+.btn-bottom-prize div:last-of-type span {
+    font-size: 0.65rem;
+}
+.btn-bottom div:last-of-type a {
+    display: block;
+    text-align: center;
+    width: 90%;
+    border: 1px solid #01AAAF;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+    background: #01AAAF;
+    color: #fff;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+}
+.list-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.list-wrap .pop_bg {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    display: none;
+}
+.list-wrap .list-box {
+    position: fixed;
+    bottom: 3rem;
+    z-index: 999;
+    width: 100%;
+    max-height: 12rem;
+    overflow-y: scroll;
+    display: none;
+    color: #696969;
+}
+.list-box .select {
+    color: #00ABAF;
+}
+.home-dashang a {
+    display: block;
+    text-align: center;
+    border: 1px solid #FE7467;
+    background: #FE7467;
+    border-radius: 5px;
+    color: #fff;
+    padding: 0.2rem 0.8rem;
+    font-size: 0.6rem;
+}
+.home-dashang {
+    font-size: 0.6rem;
+    text-align: center;
+}
+/*修改*/
+
+.basic {
+    margin-left: 0.5rem;
+}
+.basic img {
+    margin-right: 5px;
+}
+/*增加导航栏*/
+
+.nav_header {
+    width: 100%;
+    height: 2rem;
+    background: #2D2F35;
+    font-size: 0.7rem;
+}
+.concern_bbc {
+    display: inline-block;
+    height: 2rem;
+    padding-left: 0.75rem;
+}
+.concern_bbc span {
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    top: -0.45rem;
+}
+.concern_bbc img {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    margin-top: 0.25rem;
+}
+.concern_bbc_model {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 10000;
+}
+.concern_bbc_close {
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.concern_bbc_close i {
+    font-size: 1.8rem;
+}
+.concern_bbc_box {
+    position: relative;
+    z-index: 99999;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.concern_bbc_mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.go_index {
+    height: 2rem;
+    float: right;
+    line-height: 2rem;
+    /* padding-top: 0.55rem; */
+    padding-right: 0.75rem;
+    color: #BEBFC0;
+}
+.go_index i {
+    font-size: 1.2rem;
+}
+.concern_bbc_content {
+    background: #F4F4F4;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    font-size: 0.75rem;
+    top: 2.5rem;
+    right: 0;
+    left: 0;
+}
+.concern_img_box {
+    width: 6rem;
+    height: 6rem;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+}
+.concern_catp {
+    margin-bottom: 1.5rem;
+}
+.concern_img_box img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.concern_title {
+    padding: 1rem 0;
+}
+.concern_text {
+    text-align: left;
+    padding: 0.75rem;
+    font-size: 0.7rem;
+    color: #666666;
+}
+/*修改2017年1月10日*/
+
+.audio-box {
+    width: 100%;
+    padding: 0.3rem 0.2rem;
+    margin-top: 0.5rem;
+    background: #F4F4F4;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+}
+.audio-box div:first-of-type i {
+    color: #00ACAD;
+}
+.audio-box div:nth-of-type(2) {
+    margin: 0 0.5rem;
+    /*height: 5px;
+    background: #00ACAD;
+    border-radius: 5px;*/
+}
+.pro {
+    width: 100%;
+    height: 3px;
+    background: #92D6D7;
+    border-radius: 10px;
+    position: relative;
+}
+.pro_act {
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background: #01AAAF;
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+}
+.pro_yd {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background: #01AAAF;
+    position: absolute;
+    left: -8%;
+    top: -4px;
+    border-radius: 50%;
+}
+.audio-box div:last-of-type i {
+    color: #00ACAD;
+    margin-left: 5px;
+}

@@ -1,0 +1,271 @@
+.ui-cells{
+	font-size: 0.7rem;
+	color: #666666;
+}
+.title{
+	font-size: 0.8rem;
+	color: #title;
+}
+.master-img {
+	width: 2.5rem;
+    height: 2.5rem;
+    margin-right: .5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+}
+.master-img img{
+	width: 100%;
+    height: 100%;
+    display: block;
+}
+.ui-cells-access .master-prize{
+	text-align: right;
+}
+.color-prize{
+	color: #FE7467;
+}
+.icon-weixin,.icon-zhifubao{
+	font-size: 25px;
+	margin-right: 5px;
+	margin-top: 5px;
+	position: relative;
+	top: 0.15rem;
+}
+.icon-weixin{
+	color: #0FCC1A;
+}
+.icon-zhifubao{
+	color: #00A0E8;
+}
+.confirm-phone .ui-cell:before{
+	border-top: none;
+}
+.confirm-phone .ui-cell:first-of-type{
+	padding-bottom: 0;
+}
+.confirm-phone .ui-cell:nth-of-type(2){
+	padding-top: 0.2rem;
+	padding-bottom: 0;
+	font-size: 0.6rem;
+	color: #999999;
+}
+.confirm-phone input{
+	height: 2rem;
+}
+.btn-yzm a{
+	display: inline-block;
+	padding: 0.5rem;
+	border: 1px solid #01AAAF;
+	border-radius: 5px;
+	margin-left: 10px;
+	color: #01AAAF;
+}
+/*.btn-qdzf{
+    background: #F4F4F4;
+}
+.btn-qdzf:before{
+	border-top: none;
+}
+.btn-qdzf:after{
+	border-bottom: none;
+}
+.btn-qdzf div a{
+	display: inline-block;
+	width: 100%;
+	margin: 0 auto;
+	background: #01AAAF;
+	border-radius: 4px;
+	padding: 0.5rem 0;
+	text-align: center;
+	color: #fff;
+	font-size: 0.8rem;
+}*/
+.btn-qdzf{
+	width: 100%;
+	height: 3rem;
+	position: absolute;
+	background: #F4F4F4;
+	bottom: 0;
+}
+.btn-qdzf a{
+	display: block;
+	width: 95%;
+	height: 2rem;
+	line-height: 2rem;
+	font-size: 0.8rem;
+	margin: 0 auto;
+	background: #01AAAF;
+	border-radius: 4px;
+	text-align: center;
+	color: #fff;
+	margin-top: 0.5rem;
+}
+.ui-content{
+	bottom: 3rem;
+}
+.ui-content .ui-cells:first-of-type{
+	margin-top: 0;
+	padding-top: 1rem;
+	padding-bottom: 0.5rem;
+}
+.ui-content .ui-cells:first-of-type .track-nav{
+	width: 85%;
+	margin: 0 auto;
+}
+/*进度条*/
+.ui-content .ui-cells:first-of-type{
+	margin-top: 0;
+	padding-top: 1rem;
+	padding-bottom: 0.5rem;
+	position: relative;
+}
+.track-nav{
+	width: 95%;
+    margin: 0 auto;
+    font-size: 0.7rem;
+}
+.straight{
+	padding: 0;
+	position: relative;
+    top: -7px;
+    top: -0.45rem;
+    z-index: 1;
+}
+.straight:before{
+	border-top: none;
+}
+.straight span{
+	display: inline-block;
+	border-top: 2px solid #ccc;
+}	
+.track-nav div span:after{
+	content: "";
+	display: block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #AAAAAA;
+    position: absolute;
+    left: 35%;
+    top: 1.25rem;
+    z-index: 2;
+    border: 2px solid #fff;
+}
+.track-nav div{
+	position: relative;
+	padding-bottom: 1rem;
+}
+.track-nav div span.active{
+	color: #01AAAF;
+}
+.straight .line-active{
+	border-top-color: #01AAAF;
+}
+.track-nav div span.active:after{
+	background: #01AAAF;
+}
+.confirm-coupon{
+    color: #666666;
+}
+.confirm-coupon i{
+	font-size: 0.7rem;
+	color: #c7c7cc;
+}
+.cell-lianjie:before{
+	border-top: 1px solid #D9D9D9;
+}
+/*进度条结束*/
+.tuijian{
+	display: inline-block;
+    width: 38px;
+    height: 15px;
+    overflow: hidden;
+    flex-shrink: 0;
+    position: relative;
+    top: 0.1rem;
+}
+.tuijian img{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+/*增加弹窗开始*/
+.concern_bbc_model{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	display: none;
+}
+.concern_bbc_close{
+	width: 100%;
+	color: #fff;
+	text-align: right;
+}
+.concern_bbc_close i{
+	font-size: 1.8rem;
+}
+.concern_bbc_box{
+	position: relative;
+	z-index: 99999;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 3rem;
+}
+.concern_bbc_mask{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+}
+.go_index{
+	height: 2rem;
+	float: right;
+	padding-top: 0.3rem;
+	padding-right: 0.75rem;
+	color: #BEBFC0;
+}
+.go_index i{
+	font-size: 1.2rem;
+}
+.concern_bbc_content{
+	background: #F4F4F4;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 0.7rem;
+	padding-bottom: 0.5rem;
+}
+.concern_img_box{
+	width: 6rem;
+	margin: 0 auto;
+	margin-bottom: 0.5rem;
+}
+.concern_catp{
+	margin-bottom: 1.5rem;
+}
+.concern_img_box img{
+	display: block;
+	width: 100%;
+}
+.concern_title{
+	padding: 1rem 0;
+	padding-bottom: 0.5rem;
+}
+.concern_text{
+	text-align: left;
+	padding: 0.75rem;
+	font-size: 0.7rem;
+	color: #666666;
+}
+.btn-completed{
+	display: block;
+	width: 85%;
+	margin: 0 auto;
+	background: #01AAAF;
+	color: #fff;
+	line-height: 2rem;
+	border-radius: 5px;
+	margin-top: 0.5rem;
+}

@@ -1,0 +1,157 @@
+.header {
+    width: 100%;
+}
+.header img {
+    display: block;
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.reg_form {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.ui-search-input input {
+    height: 2rem;
+    /*line-height: 2rem;*/
+    border: 1px solid #CCCCCC;
+}
+.ui-cell {
+    padding: 0.5rem 0;
+}
+.ui-cell:before, .ui-cell:after {
+    border: none;
+}
+.yzm-btn {
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    margin-left: 10px;
+}
+.yzm-btn button {
+    display: block;
+    height: 2rem;
+    color: #01AAAF;
+    border: 1px solid #01AAAF;
+    border-radius: 5px;
+    font-size: 0.6rem;
+    background: none!important;
+}
+.yzm-btn .notOkBtn {
+    color: #999999;
+    border: 1px solid #999999;
+}
+.zc-btn {
+    margin-top: 2rem;
+}
+.zc-btn a {
+    display: block;
+    width: 100%;
+    height: 2.2rem;
+    color: #fff;
+    background: #00ABAF;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 2.2rem;
+    font-size: 0.8rem;
+}
+.p-text {
+    text-align: center;
+    color: #999999;
+}
+.p-text a {
+    color: #00ABAF;
+}
+.country {
+    display: block;
+}
+.phone-box {
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    height: 2rem;
+    line-height: 2rem;
+    background: #FFFFFF;
+    position: relative;
+}
+.phone-box .country {
+    color: #3A3A3A;
+    padding-left: 0.2rem;
+    padding-right: 0.5rem;
+}
+.phone-box .country .icon-shouji {
+    color: #b4b4b4;
+    font-size: 0.9rem;
+}
+.phone-box .country .icon-xiangyoujiantou-copy {
+    font-size: 0.6rem;
+}
+.phone-box input {
+    display: block;
+    width: 100%;
+    height: 1.5rem;
+    /*line-height: 1.5rem;*/
+    border: none;
+    border-left: 1px solid #CCCCCC;
+    padding-left: 0.75rem;
+    border-radius: 0;
+}
+.tipsBox {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    z-index: 2;
+}
+.phoneTips, .yzmTips {
+    padding: 0 .5rem;
+    background-color: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    position: relative;
+    border-radius: 5px;
+    line-height: 2rem;
+}
+.phoneTips:before, .yzmTips:before {
+    content: "";
+    position: absolute;
+    top: -.5rem;
+    left: 40px;
+    border-width: 0 .5rem .5rem;
+    border-style: solid;
+    border-color: #D9D9D9 transparent;
+    display: block;
+    width: 0;
+}
+.phoneTips:after, .yzmTips:after {
+    content: "";
+    position: absolute;
+    top: -.45rem;
+    left: 40px;
+    border-width: 0 .5rem .5rem;
+    border-style: solid;
+    border-color: #FFFFFF transparent;
+    display: block;
+    width: 0;
+}
+.login-type {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'PingFangSC-Regular';
+    font-size: 1.25rem;
+    color: #7F8389;
+    letter-spacing: 0;
+}
+.login-type svg {
+    width: 32px;
+    height: 32px;
+}
+.login-type .login-type-ul {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,116 @@
+/*进度条*/
+.ui-content .ui-cells:first-of-type{
+	margin-top: 0;
+	padding-top: 1rem;
+	padding-bottom: 0.5rem;
+	position: relative;
+}
+.track-nav{
+	width: 85%;
+    margin: 0 auto;
+    font-size: 0.7rem;
+}
+.straight{
+	padding: 0;
+	position: relative;
+    top: -7px;
+    top: -0.45rem;
+    z-index: 1;
+}
+.straight:before{
+	border-top: none;
+}
+.straight span{
+	display: inline-block;
+	border-top: 2px solid #ccc;
+}	
+.track-nav div span:after{
+	content: "";
+	display: block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #AAAAAA;
+    position: absolute;
+    left: 35%;
+    top: 1.25rem;
+    z-index: 2;
+    border: 2px solid #fff;
+}
+.track-nav div{
+	position: relative;
+	padding-bottom: 1rem;
+}
+.track-nav div span.active{
+	color: #01AAAF;
+}
+.straight .line-active{
+	border-top-color: #01AAAF;
+}
+.track-nav div span.active:after{
+	background: #01AAAF;
+}
+/*进度条结束*/
+.payment{
+	background: #fff;
+}
+.ui-content .payment .ui-cells{
+	padding-top: 0;
+}
+.payment .ui-cells{
+	background: #EFEFF4;
+}
+.payment .ui-cells:first-of-type:before{
+	border-top: none;
+}
+.payment-success{
+	width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+}
+.payment-success i{
+	font-size: 1.2rem;
+	color: #01AAAF;
+}
+
+.notice{
+	width: 92%;
+	margin: 0 auto;
+	line-height: 1.6;
+	margin-top: 1rem;
+	color: #999999;
+	font-size: 0.6rem;
+	padding-bottom: 0.8rem;
+}
+.notice div:first-of-type{
+	color: #3A3A3A;
+	margin-bottom: 0.2rem;
+	font-size: 0.7rem;
+} 
+.notice div:last-of-type{
+	margin-top: 0.2rem;
+} 
+.ui-content{
+	bottom: 3rem;
+}
+.bottom-box{
+	position: absolute;
+	bottom: 0;
+	background: #F4F4F4;
+	width: 100%;
+	height: 3rem;
+}
+.bottom-box a{
+	display: block;
+	background: #01AAAF;
+	width: 95%;
+	height: 2rem;
+	color: #fff;
+	border-radius: 5px;
+	line-height: 2rem;
+	text-align: center;
+	font-size: 0.75rem;
+	margin: 0 auto;
+}

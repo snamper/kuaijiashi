@@ -1,0 +1,163 @@
+body {
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 320px;
+    font-size: 0.7rem;
+    font-family: "Microsoft YaHei", "微软雅黑", Helvetica, "黑体", Arial, Tahoma;
+}
+.color-bg {
+    background: #01AAAF!important;
+}
+.color-border {
+    border: 1px solid #01AAAF!important;
+}
+.width100 {
+    width: 100%;
+}
+.color-prize {
+    color: #FE7467;
+}
+.color-text {
+    color: #01AAAF;
+}
+.disableCss {
+    pointer-events: none!important;
+    color: #8DCED2!important;
+    cursor: default!important;
+    background: #00ABAF!important;
+}
+.btn-sure {
+    background: #01AAAF;
+    color: #fff;
+}
+#content-box img {
+    display: block;
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+#content-box p {
+    color: #999999;
+    text-align: center;
+    font-size: 0.8rem;
+}
+#content-box a {
+    display: block;
+    width: 35%;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #01AAAF;
+    color: #01AAAF;
+    padding: 0.4rem 0;
+    font-size: 0.8rem;
+    border-radius: 4px;
+}
+a {
+    bblr: expression(this.onFocus=this.blur());
+    /*IE使用*/
+    outline-style: none;
+    /*FF使用*/
+}
+.ui-cell:before, .ui-cell:after {
+    border-color: #CCCCCC !important;
+}
+.ui-cells:before, .ui-cells:after {
+    border-color: #CCCCCC !important;
+}
+/*底部消息气泡*/
+
+#Bubble_box {
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 30%;
+    background: red;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    z-index: 111;
+    font-size: 10px !important;
+    line-height: 16px;
+}
+/*底部广告链接*/
+
+.admodel {
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    bottom: 2.5rem;
+    z-index: 10;
+}
+.admodel img {
+    display: block;
+    width: 100%;
+}
+.admodel div:first-of-type {
+    width: 0.5rem;
+    margin-right: 1rem;
+}
+.admodel a {
+    display: block;
+    width: 27%;
+    margin-left: 1rem;
+}
+.admodel:before, .admodel:after {
+    border: none;
+}
+.svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+.hui-backtop {
+    bottom: 18%!important;
+}
+/*编辑器*/
+
+.custom-icon {
+    background-size: 100% 100%;
+}
+.custom-icon.text {
+    background-image: url(../../images/icon/pencil.svg);
+}
+.custom-icon.font {
+    background-image: url(../../images/icon/font.svg);
+}
+.custom-icon.align {
+    background-image: url(../../images/icon/align-justify.svg);
+}
+.custom-icon.list {
+    background-image: url(../../images/icon/list.svg);
+}
+.custom-icon.color {
+    background-image: url(../../images/icon/paint-brush.svg);
+}
+.custom-icon.eraser {
+    background-image: url(../../images/icon/eraser.svg);
+}
+.custom-icon.full-screen {
+    background-image: url(../../images/icon/arrows-alt.svg);
+}
+.custom-icon.hr {
+    background-image: url(../../images/icon/minus.svg);
+}
+.custom-icon.image {
+    background-image: url(../../images/icon/file-image-o.svg);
+}
+.custom-icon.link {
+    background-image: url(../../images/icon/chain.svg);
+}
+.custom-icon.table {
+    background-image: url(../../images/icon/table.svg);
+}
+.custom-icon.undo {
+    background-image: url(../../images/icon/undo.svg);
+}
+.custom-icon.unlink {
+    background-image: url(../../images/icon/chain-broken.svg);
+}
+.custom-icon.info {
+    background-image: url(../../images/icon/info.svg);
+}

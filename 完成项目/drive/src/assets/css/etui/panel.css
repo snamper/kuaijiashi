@@ -1,0 +1,93 @@
+/* === Panels === */
+.ui-panel-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    opacity: 0;
+    z-index: 5999;
+    display: none;
+}
+.ui-panel {
+    z-index: 1000;
+    display: none;
+    background: #111;
+    color: white;
+    box-sizing: border-box;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    position: absolute;
+    width: 12rem;
+    top: 0;
+    height: 100%;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform 400ms;
+    transition: transform 400ms;
+}
+.ui-panel.ui-panel-left.ui-panel-cover {
+    z-index: 6000;
+    left: -12rem;
+}
+.ui-panel.ui-panel-left.ui-panel-reveal {
+    left: 0;
+}
+.ui-panel.ui-panel-right.ui-panel-cover {
+    z-index: 6000;
+    right: -12rem;
+}
+.ui-panel.ui-panel-right.ui-panel-reveal {
+    right: 0;
+}
+body.ui-with-panel-left-cover .ui-page,
+body.ui-with-panel-right-cover .ui-page {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform 400ms;
+    transition: transform 400ms;
+}
+body.ui-with-panel-left-cover .ui-panel-overlay,
+body.ui-with-panel-right-cover .ui-panel-overlay {
+    display: block;
+}
+body.ui-with-panel-left-reveal .ui-page,
+body.ui-with-panel-right-reveal .ui-page {
+    -webkit-transition: 400ms;
+    transition: 400ms;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+}
+body.ui-with-panel-left-reveal .ui-panel-overlay,
+body.ui-with-panel-right-reveal .ui-panel-overlay {
+    display: block;
+}
+body.ui-with-panel-left-reveal .ui-page {
+    -webkit-transform: translate3d(12rem, 0, 0);
+    transform: translate3d(12rem, 0, 0);
+}
+body.ui-with-panel-left-reveal .ui-panel-overlay {
+    margin-left: 12rem;
+}
+body.ui-with-panel-left-cover .ui-panel-left {
+    -webkit-transform: translate3d(12rem, 0, 0);
+    transform: translate3d(12rem, 0, 0);
+}
+body.ui-with-panel-right-reveal .ui-page {
+    -webkit-transform: translate3d(-12rem, 0, 0);
+    transform: translate3d(-12rem, 0, 0);
+}
+body.ui-with-panel-right-reveal .ui-panel-overlay {
+    margin-left: -12rem;
+}
+body.ui-with-panel-right-cover .ui-panel-right {
+    -webkit-transform: translate3d(-12rem, 0, 0);
+    transform: translate3d(-12rem, 0, 0);
+}
+body.ui-panel-closing .ui-page {
+    -webkit-transition: 400ms;
+    transition: 400ms;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+}

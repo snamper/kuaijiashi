@@ -1,0 +1,30 @@
+/* 文字截断 */
+.ui-nowrap,
+.ui-nowrap-flex,
+.ui-nowrap-2,
+.ui-nowrap-3{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ui-nowrap {
+    max-width: 100%;
+    white-space: nowrap;
+}
+.ui-nowrap-flex,
+.ui-nowrap-2,
+.ui-nowrap-3{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.ui-nowrap-flex {
+    -webkit-line-clamp: 1;
+    -webkit-box-flex: 1;
+    height: inherit;
+}
+/*要截断的行数*/
+.ui-nowrap-2 {
+    -webkit-line-clamp: 2;
+}
+.ui-nowrap-3{
+    -webkit-line-clamp: 3;
+}

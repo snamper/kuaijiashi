@@ -1,0 +1,103 @@
+.tab-list li {
+    text-align: center;
+    line-height: 2rem;
+    font-size: 0.8rem;
+}
+.ui-tab-content {
+    min-height: 0;
+    background: #F4F4F4;
+    margin-top: 0.5rem;
+}
+.ui-cells {
+    font-size: 0.7rem;
+}
+.ui-cell {
+    padding: 0.5rem 0;
+    margin: 0 0.75rem;
+}
+.list-left {
+    width: 20%;
+    color: #3A3A3A;
+}
+.list-zhong {
+    color: #666666;
+}
+.list-right {
+    width: 25%;
+    color: #666666
+}
+.box-left {
+    width: 20%;
+    margin-right: 20px;
+}
+.chat-photo {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    display: inline-block;
+}
+.box-left img {
+    width: 100%;
+    border-radius: 50%;
+}
+.box-zhong {
+    line-height: 1.8;
+    color: #666666;
+}
+.box-zhong div:nth-of-type(2) {
+    color: #3A3A3A;
+    font-size: 0.8rem;
+}
+.box-zhong div:last-of-type {
+    color: #999999;
+    font-size: 0.7rem;
+}
+.box-right {
+    width: 25%;
+}
+.list-right a {
+    float: right;
+    font-size: 18px;
+    color: #666666;
+}
+.box-right a {
+    margin-bottom: 0.5rem;
+    display: block;
+    padding: 0.2rem;
+    text-align: center;
+    border-radius: 4px;
+}
+.see-order {
+    border: 1px solid #CCCCCC;
+    color: #666666;
+}
+.go-payment {
+    color: #fff;
+    background: #FE7467;
+}
+.go-evaluate {
+    color: #fff;
+    background: #01AAAF;
+}
+.cancel-order {
+    background-color: #CCCCCC;
+    color: #FFFFFF;
+}
+.unread {
+    display: inline-block;
+    width: .4rem;
+    height: .4rem;
+    background: #ee403b;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.desc {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
